@@ -95,8 +95,8 @@
     }
 
     .count{
-        color: white;
-        font-size: 20px;
+        color: rgb(255, 0, 0);
+        font-size: 25px;
     }
 
     .msgBox{
@@ -129,6 +129,10 @@
         font-size: 20px;
     }
 
+    .con{
+        color: #fff;
+    }
+
     </style>
 </head>
 <body>
@@ -138,49 +142,50 @@
 
         <div class="wrapper">
             <div class="div1">
-                <h2><span class="count1 counter">2</span>+</h2>
+                <h2><span class="count1 count">2</span>+</h2>
                 <p>Working of year</p>
             </div>
 
             <div class="div2">
-                <h2><span class="count2 counter">6</span>+</h2>
+                <h2><span class="count2 count">6</span>+</h2>
                 <p>Training of Month</p>
             </div>
 
             <div class="div3">
-                <h2><span class="count3 counter">3</span>+</h2>
+                <h2><span class="count3 count">3</span>+</h2>
                 <p>Education Experience</p>
             </div>
 
             <div class="div4">
-                <h2><span class="count4 counter">8</span>+</h2>
+                <h2><span class="count4 count">8</span></h2>
                 <p>Project Complete</p>
             </div>
         </div>
 
-        <div id="talkbubble"><span class="count counter">1421</span></div>
+        <div id="talkbubble"><span class="con count">1421</span></div>
 
-        <div class="msgBox"><span class="num wow counter">1500</span></div>
+        <div class="msgBox"><span class="num count">1500</span></div>
 
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js" integrity="sha512-YHQNqPhxuCY2ddskIbDlZfwY6Vx3L3w9WRbyJCY81xpqLmrM6rL2+LocBgeVHwGY9SXYfQWJ+lcEWx1fKS2s8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.js" integrity="sha512-Ruum+TqMFQeWu591w/xNaVfqRnS9xTbq95Mx3G57tOkNYhIgmHc8xDaEs9X6MV3p+K2s+CQuhgtQNKH91Yidcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
-        jQuery(document).ready(function($) {
-                    $('.counter').counterUp({
-                        delay: 100,
-                        time: 1000
-                    });
+        $(document).ready(function() {
+            $('.count').each(function() {
+                $(this).prop('Counter',0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function(now) {
+                        $(this).text(Math.ceil(now));
+                    }
                 });
+            });
+        })
 
     </script>
-
 
 </body>
 </html>
