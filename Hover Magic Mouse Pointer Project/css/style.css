@@ -10,14 +10,22 @@ body{
     display : flex;
     justify-content: center;
     align-items: center;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .pointerCenter{
     height : 5px;
     width : 5px;
     border-radius: 50%;
     background : rgb(163, 56, 56);
-    z-index: -1;
+    /* z-index: -1; */
+}
+
+button:hover ~ .pointerOutside{
+    transform: scale(8);
+}
+
+button:hover ~ .pointerCenter{
+    padding: 150px;
 }
 
 /* .outerDiv{
