@@ -23,6 +23,8 @@
         <div class="pointerCenter"></div>
     </div>
 
+    <div class="hober"></div>
+
     <!-- <div class="outerDiv">
     </div>
 
@@ -35,7 +37,6 @@
     <script>
         $(document).ready(function(){
             $(document).mousemove(function(e){
-            //    console.log(e.pageX, e.pageY);
                setTimeout(() => {
                 $('.pointerOutside').offset({left:e.pageX-17, top: e.pageY-17})
                }, 100);
@@ -46,20 +47,23 @@
             })
         })
 
-        //
-        //         $(document).ready(function(){
-        //     $(document).mousemove(function(e){
-        //        console.log(e.pageX, e.pageY);
-        //     //    setInterval(() => {
-        //     //     $('.outerDiv').offset({left:e.pageX-17, top: e.pageY-17})
-        //     //    }, 3000);
+        $('button').each(function() {
+            $(this).hover(function() {
+                $('.pointerOutside').css({'border':'1px solid blue', 'background': 'yellow'})
+            })
+        })
 
-        //     setTimeout(() => {
-        //         $('.outerDiv').offset({left:e.pageX-17, top: e.pageY-17})
-        //     }, 100);
-        //        $('.innerDiv').offset({left:e.pageX-5, top: e.pageY-5})
+
+        // var hober = document.querySelector('.hober')
+        // var button = document.querySelectorAll('button')
+
+        // for (let btn of button) {
+        //     btn.addEventListener('mouseover', function() {
+        //         this.style.color = "red"
         //     })
-        // })
+
+        // }
+
     </script>
 </body>
 </html>
