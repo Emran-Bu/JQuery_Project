@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Mouse Pointer Project</title>
+   
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="pointerOutside">
+        <div class="pointerCenter"></div>
+    </div>
+
+    <!-- <div class="outerDiv">
+    </div>
+
+    <div class="innerDiv"> -->
+        <button>gjhdfijg</button>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quisquam eligendi odit fugiat libero consequuntur earum dicta voluptatibus architecto aperiam neque fuga sed veniam harum ipsa obcaecati quo eveniet autem dignissimos quos ullam nihil ut illum? Magni laboriosam exercitationem facilis in labore, a officiis perspiciatis, placeat deserunt aliquam consequatur soluta?</div>
+
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(document).mousemove(function(e){
+            //    console.log(e.pageX, e.pageY);
+               setTimeout(() => {
+                $('.pointerOutside').offset({left:e.pageX-17, top: e.pageY-17})
+               }, 100);
+
+               setTimeout(() => {
+                $('.pointerCenter').offset({left:e.pageX-5, top: e.pageY-5})
+               }, 70);
+            })
+        })
+
+        //
+        //         $(document).ready(function(){
+        //     $(document).mousemove(function(e){
+        //        console.log(e.pageX, e.pageY);
+        //     //    setInterval(() => {
+        //     //     $('.outerDiv').offset({left:e.pageX-17, top: e.pageY-17})
+        //     //    }, 3000);
+
+        //     setTimeout(() => {
+        //         $('.outerDiv').offset({left:e.pageX-17, top: e.pageY-17})
+        //     }, 100);
+        //        $('.innerDiv').offset({left:e.pageX-5, top: e.pageY-5})
+        //     })
+        // })
+    </script>
+</body>
+</html>

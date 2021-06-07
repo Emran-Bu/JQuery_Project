@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience Count Project</title>
+
+    <style>
+
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+           
+        }
+
+        .wrapper{
+            display: flex;
+        }
+
+        .div1{
+            text-align: center;
+            width: 150px;
+        }
+
+        .div2{
+            margin: 0px 10px;
+            text-align: center;
+            width: 150px;
+        }
+
+        .div3{
+            margin-right: 10px; 
+            text-align: center;
+            width: 150px;
+        }
+
+        .div4{
+            margin-right: 10px; 
+            text-align: center;
+            width: 150px;
+        }
+
+
+        /*  */
+
+
+        /* .count1, .count2, .count3, .count4{
+            animation-name: animate;
+            animation-duration: 1s;
+            transition: 1s all ease;
+            opacity: 1; 
+
+            
+        }
+
+         @keyframes animate{
+            form{
+                opacity: 1;
+            }
+
+            to{
+                opacity: 0;
+            }
+        }  */
+
+    #talkbubble {
+        width: 120px;
+        height: 80px;
+        background: red;
+        position: relative;
+        -moz-border-radius:    10px;
+        -webkit-border-radius: 10px;
+        border-radius:         10px;
+        float:left;
+        margin:20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #talkbubble:before {
+        content:"";
+        position: absolute;
+        right: 100%;
+        top: 26px;
+        width: 0;
+        height: 0;
+        border-top: 13px solid transparent;
+        border-right: 26px solid red;
+        border-bottom: 13px solid transparent;
+    }
+
+    .count{
+        color: white;
+        font-size: 20px;
+    }
+
+    .msgBox{
+        width: 120px;
+        height: 80px;
+        background: teal;
+        position: relative;
+        border-radius: 10px;
+        margin:  20px 250px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .msgBox:before{
+        content: "";
+        position: absolute;
+        border-top: 13px solid transparent;
+        border-right: 26px solid teal;
+        border-bottom: 5px solid transparent;
+        right: 100%;
+        width: 0;
+        height: 0;
+        top: 26px;
+    }
+
+    .num{
+        color: white;
+        font-size: 20px;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eveniet at voluptates est placeat illum molestiae natus dolore quae dicta consequatur explicabo ad, repudiandae repellat deleniti aperiam magni sed exercitationem saepe minima laboriosam beatae ipsam expedita? Corporis, voluptatum dolorem? Tempore vitae amet omnis quaerat illo qui, aliquid inventore in iste ab, ipsum excepturi autem maiores aperiam odit suscipit velit, consequuntur minus ex a saepe harum eveniet explicabo odio? Mollitia voluptas delectus saepe sunt natus hic optio rem accusamus enim quibusdam praesentium, pariatur itaque nesciunt, dolores in, provident velit! Sit officiis illum sequi, eligendi natus consequatur velit, animi sed sapiente in nobis id ullam suscipit voluptates explicabo nemo iure aspernatur non esse? Quod nihil id molestias optio quia eos ab obcaecati harum eaque? Minima sed totam quam provident et quo! Dolores, minus! Molestias praesentium odit esse nihil earum expedita nam, ullam explicabo adipisci recusandae cumque repellendus asperiores dolor enim ipsa laborum, sunt maxime, accusantium amet eum voluptatem modi consequatur iste. Velit voluptatum labore doloribus minus sed repudiandae aut voluptas et ea, molestias pariatur illo dolores quaerat necessitatibus. Obcaecati, aspernatur quos delectus quasi blanditiis ratione quisquam mollitia distinctio fugit, dolore ipsum perferendis? Quaerat, accusamus maxime! Autem dicta blanditiis sit aperiam corporis. Dolores fugit eius explicabo, id ut quas autem illo consectetur fugiat beatae doloribus blanditiis ducimus dolorem saepe voluptatum possimus? Distinctio necessitatibus omnis magni deleniti tempore unde dolorum blanditiis ut totam repudiandae nostrum aperiam quisquam, magnam quis alias iure! Eligendi dignissimos necessitatibus sunt sed velit, quaerat, unde sit porro iste soluta corrupti magnam veniam at ea eius id cumque, minus maiores. Consequuntur corrupti itaque fuga repellat id soluta sint dolorum! Officiis magnam repellendus nihil. Quidem assumenda a minima ab natus ut exercitationem, excepturi quasi, ipsum, eos eum? Ipsa ex facilis voluptas provident laudantium eaque, quia recusandae reiciendis cumque aliquid id. Quod fuga eaque voluptatum vitae, quae repellendus ducimus vero, officia eius similique blanditiis explicabo sint sapiente voluptatibus in corrupti expedita, exercitationem laborum aspernatur est! Nostrum harum quia, minima in necessitatibus facilis expedita saepe doloribus voluptas eos nam. Doloremque, quis ipsam doloribus debitis autem fuga! Quis rem totam dolor facilis minima repudiandae sit voluptates explicabo aut consequuntur ad eveniet optio exercitationem excepturi officia, voluptatum numquam esse cumque nostrum delectus pariatur? Odio voluptatibus reiciendis esse doloremque? Enim magni adipisci ipsa quam deserunt similique aliquam quis voluptas nemo nihil. Velit soluta praesentium eos voluptates id officiis facere repudiandae! Sequi, nobis id architecto veritatis culpa illum hic optio. Consequuntur at modi debitis aliquam sapiente fuga, quo, cumque ratione saepe facilis aperiam totam in voluptas eum laudantium sed nesciunt magni sunt veritatis harum. Amet corporis nemo error cum perspiciatis cumque quibusdam molestiae voluptas sapiente voluptatem libero aliquam natus veritatis, pariatur recusandae doloremque necessitatibus earum ducimus? Cupiditate, minima veritatis eaque nobis facere expedita enim repudiandae quam adipisci commodi. Fugit maxime atque consectetur voluptas dolores alias, quia blanditiis sit deserunt quod dolor ex ipsam quam maiores unde iste. Aperiam quis iusto odio magnam velit odit commodi asperiores ipsa quisquam natus unde facere eius voluptate voluptatibus, autem, inventore a, nesciunt ratione aliquid quae. Iste, doloremque illo. Laboriosam ex maxime esse adipisci maiores mollitia tempora illum corrupti quidem, temporibus quisquam impedit voluptas earum dicta molestias delectus repellat, commodi ratione id nostrum cumque fuga. Quia, animi! Eius provident odio dolore quos velit cum, vitae laudantium animi aperiam nesciunt earum repudiandae doloribus veritatis quod aut ratione iure impedit molestias? Facilis eum necessitatibus, aperiam libero asperiores, laborum eius earum a vero distinctio reiciendis temporibus rem harum dolores, ducimus fugiat expedita ratione. Nulla optio voluptas eius omnis iusto sapiente, doloremque ab repellendus. Nihil, totam? Provident laboriosam corporis cumque vero assumenda delectus debitis omnis nemo illum.</p>
+
+        <div class="wrapper">
+            <div class="div1">
+                <h2><span class="count1 counter">2</span>+</h2>
+                <p>Working of year</p>
+            </div>
+
+            <div class="div2">
+                <h2><span class="count2 counter">6</span>+</h2>
+                <p>Training of Month</p>
+            </div>
+
+            <div class="div3">
+                <h2><span class="count3 counter">3</span>+</h2>
+                <p>Education Experience</p>
+            </div>
+
+            <div class="div4">
+                <h2><span class="count4 counter">8</span>+</h2>
+                <p>Project Complete</p>
+            </div>
+        </div>
+
+        <div id="talkbubble"><span class="count counter">1421</span></div>
+
+        <div class="msgBox"><span class="num wow counter">1500</span></div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js" integrity="sha512-YHQNqPhxuCY2ddskIbDlZfwY6Vx3L3w9WRbyJCY81xpqLmrM6rL2+LocBgeVHwGY9SXYfQWJ+lcEWx1fKS2s8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.js" integrity="sha512-Ruum+TqMFQeWu591w/xNaVfqRnS9xTbq95Mx3G57tOkNYhIgmHc8xDaEs9X6MV3p+K2s+CQuhgtQNKH91Yidcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        jQuery(document).ready(function($) {
+                    $('.counter').counterUp({
+                        delay: 100,
+                        time: 1000
+                    });
+                });
+
+    </script>
+
+
+</body>
+</html>
