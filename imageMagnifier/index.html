@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image | Magnifier</title>
+</head>
+<body>
+
+    <img id="zoom_01" src="small.png" data-zoom-image="large.jpg">
+    
+
+
+    <script src="jquery-3.5.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/2.2.3/jquery.elevatezoom.min.js" integrity="sha512-UH428GPLVbCa8xDVooDWXytY8WASfzVv3kxCvTAFkxD2vPjouf1I3+RJ2QcSckESsb7sI+gv3yhsgw9ZhM7sDw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        // $("#zoom_01").elevateZoom();
+
+        $("#zoom_01").elevateZoom({
+            zoomType				: "lens",
+            lensShape : "round",
+            lensSize    : 100
+        });
+
+        // $("#zoom_01").elevateZoom({
+        //     zoomType				: "inner",
+        //     cursor: "crosshair"
+        // });
+
+        // $("#zoom_01").elevateZoom({
+        //     zoomWindowWidth:300,
+        //     zoomWindowHeight:100
+        // }); 
+    </script>
+
+</body>
+</html>
+
+
+<!-- $("#zoom_02").elevateZoom({tint:true, tintColour:'#F90', tintOpacity:0.5}); -->
+
+
+<!--  -->
+
+
+<!-- <img id="zoom_04a" src="small/image1.png" data-zoom-image="large/image1.jpg"/>
+<img id="zoom_04b" src="small/image1.png" data-zoom-image="large/image1.jpg"/>
+<img id="zoom_04c" src="small/image1.png" data-zoom-image="large/image1.jpg"/>
+<img id="zoom_04" src="small/image1.png" data-zoom-image="large/image1.jpg"/>
+
+$("#zoom_04a").elevateZoom({zoomWindowPosition: 1});
+$("#zoom_04b").elevateZoom({zoomWindowPosition: 12});
+$("#zoom_04c").elevateZoom({zoomWindowPosition: "demo-container", zoomWindowHeight: 200, zoomWindowWidth:200, borderSize: 0, easing:true});
+$("#zoom_04d").elevateZoom({zoomWindowPosition: 1, zoomWindowOffetx: 10}); -->
+
+
+<!--  -->
+
+<!-- 
+<img id="img_01" src="small/image1.jpg" data-zoom-image="large/image1.jpg"/>
+
+<div id="gal1">
+ 
+  <a href="#" data-image="small/image1.jpg" data-zoom-image="large/image1.jpg">
+    <img id="img_01" src="thumb/image1.jpg" />
+  </a>
+
+  <a href="#" data-image="small/image2.jpg" data-zoom-image="large/image2.jpg">
+    <img id="img_01" src="thumb/image2.jpg" />
+  </a>
+
+  <a href="#" data-image="small/image3.jpg" data-zoom-image="large/image3.jpg">
+    <img id="img_01" src="thumb/image3.jpg" />
+  </a>
+
+  <a href="#" data-image="small/image4.jpg" data-zoom-image="large/image4.jpg">
+    <img id="img_01" src="thumb/image4.jpg" />
+  </a>
+
+</div>
+
+
+//initiate the plugin and pass the id of the div containing gallery images
+$("#zoom_03").elevateZoom({gallery:'gallery_01', cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true, loadingIcon: 'http://www.elevateweb.co.uk/spinner.gif'}); 
+
+//pass the images to Fancybox
+$("#zoom_03").bind("click", function(e) {  
+  var ez =   $('#zoom_03').data('elevateZoom');	
+	$.fancybox(ez.getGalleryList());
+  return false;
+});
+
+
+#gallery_01 img{border:2px solid white;}
+ 
+/*Change the colour*/
+.active img{border:2px solid #333 !important;} -->
+
+
+<!--  -->
+
+
+<!-- <img id="zoom_09" src="small/image1.png" data-zoom-image="large/image1.jpg"/>
+
+<select id="select"> 
+<option value="1">Front</option>
+<option value="2">Back</option>
+<option value="3">Scenery</option>
+<option value="4">Side</option>
+</select>
+
+$("#zoom_09").elevateZoom({
+    gallery : "gallery_09",
+    galleryActiveClass: "active"
+          }); 
+    
+
+$("#select").change(function(e){
+var currentValue = $("#select").val();
+if(currentValue == 1){    
+smallImage = 'http://www.elevateweb.co.uk/wp-content/themes/radial/zoom/images/small/image1.png';
+largeImage = 'http://www.elevateweb.co.uk/wp-content/themes/radial/zoom/images/large/image1.jpg';
+}
+if(currentValue == 2){    
+smallImage = 'http://www.elevateweb.co.uk/wp-content/themes/radial/zoom/images/small/image2.png';
+largeImage = 'http://www.elevateweb.co.uk/wp-content/themes/radial/zoom/images/large/image2.jpg';
+}
+if(currentValue == 3){    
+smallImage = 'http://www.elevateweb.co.uk/wp-content/themes/radial/zoom/images/small/image3.png';
+largeImage = 'http://www.elevateweb.co.uk/wp-content/themes/radial/zoom/images/large/image3.jpg';
+}
+if(currentValue == 4){    
+smallImage = 'http://www.elevateweb.co.uk/wp-content/themes/radial/zoom/images/small/image4.png';
+largeImage = 'http://www.elevateweb.co.uk/wp-content/themes/radial/zoom/images/large/image4.jpg';
+}
+// Example of using Active Gallery
+$('#gallery_09 a').removeClass('active').eq(currentValue-1).addClass('active');		
+
+
+var ez =   $('#zoom_09').data('elevateZoom');	  
+
+ez.swaptheimage(smallImage, largeImage); 
+
+}); -->
+
